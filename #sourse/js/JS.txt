@@ -1,0 +1,32 @@
+//@prepros-append ../../js/fancybox/jquery.fancybox.pack.js
+//@prepros-append jquery.form.min.js
+//@prepros-append jquery.popover.min.js
+//@prepros-append jquery.inputmask.bundle.min.js
+//@prepros-append jquery.nicescroll.min.js
+//@prepros-append jquery.ui.touch-punch.min.js
+//@prepros-append jquery.mousewheel.min.js
+//@prepros-append jquery.autosize.input.min.js
+//@prepros-append jquery.ns-autogrow.min.js
+//@prepros-append jquery.parallax.js
+//@prepros-append baguetteBox.js
+//@prepros-append livesearch.js
+//@prepros-append slick.min.js
+//@prepros-append typed.min.js
+
+//@prepros-append map.js
+//@prepros-append sliders.js
+//@prepros-append scroll.js
+//@prepros-append fullscroll.js
+//@prepros-append responsive.js
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/jquery.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js"></script>
+
+
+<script src="https://maps.google.com/maps/api/js?sensor=false&amp;key=AIzaSyAe2qamce_RVw-APqN7EqsaGZ2Cm5Zciss"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=88450800-c3cf-4124-9321-04e971d0c3d8&lang=ru_RU" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- async -->

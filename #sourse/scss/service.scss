@@ -1,0 +1,212 @@
+.mainblock {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+    // .mainblock__image
+
+    &__service {
+        // padding: 100px;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    // .mainblock__overlay
+
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 5;
+        opacity: .65;
+        background: #020000;
+    }
+
+
+    // .mainblock__content
+
+    // .mainblock__container
+
+    &__service &__container {
+        position: relative;
+        z-index: 10;
+        padding: 0 15px 90px 15px;
+    }
+
+    &__title {
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        font-size: 45px;
+        font-weight: 700;
+        margin: -5px 0 10px -2px;
+        font-family: "Montserrat";
+        line-height: 30px;
+        @media (max-width: $md3+px) {
+            font-size: 30px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 25px;
+        }
+    }
+
+    &__subtitle {
+        color: #fff;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 300;
+        font-family: "Montserrat";
+        line-height: 25px;
+        @media (max-width: $md3+px) {
+            font-size: 17px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 15px;
+        }
+    }
+}
+
+.breadcrumb {
+    padding: 20px 10px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #858585;
+    // .breadcrumb__container
+    
+    &__container {
+    }
+
+    // .breadcrumb__item
+
+    &__item {
+        &::after {
+            border-style: solid;
+            border-width: 0.15em 0.15em 0 0;
+            content: '';
+            display: inline-block;
+            height: 0.55em;
+            left: 1.25em;
+            position: relative;
+            top: 0.30em;
+            transform: rotate(45deg);
+            vertical-align: top;
+            width: 0.55em;
+            @media (max-width: $md3+px) {
+                top: 0.4em;
+                width: 0.48em;
+                height: 0.48em;
+            }
+            @media (max-width: $md4+px) {
+                left: 0.65em;
+                top: 0.35em;
+            }
+        }
+        &:last-child::after {
+            content: '';
+            display: none;
+        }
+        margin-right: 40px;
+        @media (max-width: $md4+px) {
+            margin-right: 20px;
+        }
+    }
+
+    // .breadcrumb__link
+
+    &__link {
+        color: #777;
+        font-weight: 600;
+        font-size: 12.5px;
+        &:hover {
+            color: #fab702;
+        }
+        @media (max-width: $md3+px) {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    // .breadcrumb__title
+
+    &__title {
+        font-size: 12px;
+        color: #777;
+    }
+}
+
+.content-wrap {
+    padding: 0 10px;
+    // .content-wrap__container
+
+    &__container {
+    }
+
+
+    // .content-wrap__row
+
+    &__row {
+        display: flex;
+        margin: 20px -15px;
+        flex-wrap: wrap;
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+        }
+    }
+
+    // .content-wrap__column
+
+    &__column {
+        flex: 0 1 33.333%;
+        padding: 0 15px;
+        margin: 0 0 20px 0;
+        @media (max-width: $md3+px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    // .content-wrap__image
+
+    &__image {
+        margin: 0 0 20px 0;
+        display: inline-block;
+        width: 100%;
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    // .content-wrap__title
+
+    &__title {
+        font-family: "Montserrat";
+        font-weight: 400;
+        color: #333;
+        font-size: 18px;
+        margin: 0 0 12px 0;
+        display: inline-block;
+        line-height: 20px;
+        &:hover {
+            color: #fab702;
+        }
+    }
+
+    // .content-wrap__text
+
+    &__text {
+        color: #777;
+        font-size: 14px;
+        line-height: 24 / 14 * 100%;
+        margin: 0 0 16px 0;
+    }
+}

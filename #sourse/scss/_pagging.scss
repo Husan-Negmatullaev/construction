@@ -1,0 +1,11 @@
+.pagging {@include flexbox();justify-content: center;align-items: center;padding: 0px 0px 0px 0px;}
+.pagging__arrow {width: 13px;height: 24px;
+	&:first-child{background: url('../img/icons/p-left.svg') 0 0 no-repeat;background-size: 100%;}
+	&:last-child{background: url('../img/icons/p-right.svg') 0 0 no-repeat;background-size: 100%;}
+}
+.pagging-list {margin: 0px 25px;@include flexbox();
+	li{margin: 0px 25px;}
+}
+.pagging__link {border-bottom: 1px solid #fff;font-size: 18px;color: #000;
+	&.active{border-bottom: 1px solid #000;}
+}
